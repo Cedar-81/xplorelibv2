@@ -31,9 +31,9 @@ function BBanner({showSum, showDown, toggleShowBanner}) {
         setselectedval(val)
 
         if(val == 'Fiction') {
-            setgenreval(genre.Fiction.map(gen => <li>{gen}</li> )) 
+            setgenreval(genre.Fiction.map((gen, key) => <li key={key}>{gen}</li> )) 
         } else if (val == 'Non-Fiction') {
-            setgenreval(genre.Non_fiction.map(gen => <li>{gen}</li> )) 
+            setgenreval(genre.Non_fiction.map((gen, key) => <li key={key}>{gen}</li> )) 
         }
         
 
@@ -44,10 +44,10 @@ function BBanner({showSum, showDown, toggleShowBanner}) {
 
         if(selectedval == 'Fiction') {
             let count = 0
-            setgenreval(genre.Fiction.map(gen => {count += 1; return <li key={count}>{gen}</li>} )) 
+            setgenreval(genre.Fiction.map((gen , key)=> {count += 1; return <li key={key}>{gen}</li>} )) 
         } else if (selectedval == 'Non-Fiction') {
             let count = 0
-            setgenreval(genre.Non_fiction.map(gen => {count += 1; return <li key={count}>{gen}</li>} )) 
+            setgenreval(genre.Non_fiction.map((gen, key) => {count += 1; return <li key={key}>{gen}</li>} )) 
         }
         // async function getBooks() {
         //   const books = await fetch('/api/book', {method:'GET'})
