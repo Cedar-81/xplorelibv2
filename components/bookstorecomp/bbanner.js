@@ -3,7 +3,7 @@ import booksLib from '../../pages/api/booksLib'
 import genre from '../../pages/api/genre'
 
 import Card from '../xplorecomp/card'
-import * as MdIcons from 'react-icons'
+import * as MdIcons from 'react-icons/md'
 import { useState, useEffect } from 'react'
 
 
