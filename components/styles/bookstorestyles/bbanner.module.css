@@ -1,0 +1,186 @@
+.bbannercon {
+    width: 100%;
+    height: 70vh;
+    background-color: var(--main-primary-dark);
+    border: 2px solid var(--main-primary);
+    top: 9vh;
+    position: fixed;
+    max-height: 90vh;
+    overflow: hidden;
+    color: var(--font-primary);
+
+}
+
+.bbanner {
+    display: flex;
+    color: var(--font-primary);
+    padding: 3em 5%;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 912px) {
+    .bbannercon {
+        overflow-y: scroll;
+    }
+
+    .bbannercon::-webkit-scrollbar {
+        width:6px;
+        margin-left: 1em;
+    }
+
+}
+
+
+.bbanner .selector {
+    flex: 1;
+}
+
+.bbanner .genre {
+    display: flex;
+    flex-direction: column;
+}
+
+.bbanner .selector .selected {
+    width: 20em;
+    height: 3em;
+    background-color: var(--main-primary-trans);
+    border-radius: 5px;
+    color: var(--font-primary);
+    outline: none;
+    font-size: 16px;
+    font-weight: 900;
+    padding: 0 0.5em;
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bbanner .selectorli {
+    border: 2px solid var(--main-primary);
+    height: 6em;
+    width: 20em;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 6em;
+    background-color: var(--main-primary-dark);
+}
+
+
+.selectorli .li {
+    height: 2.7em;
+    display: flex;
+    align-items: center;
+    padding: 0 0.5em;
+    font-family: 'Dancing Script', cursive;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.selectorli .li:hover {
+    border-radius: 5px;
+    background-color: var(--main-primary);
+    margin: 0.2em;
+}
+
+.selector .subgenre {
+    width: 100%;
+    height: 15em;
+    margin-top: 1em;
+}
+
+
+.subgenre .subli {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    height: 14em;
+    overflow-y: scroll;
+}
+
+.subgenre .subli::-webkit-scrollbar {
+    width:6px;
+    margin-left: 1em;
+}
+
+
+.subgenre li {
+    width: 48%;
+    list-style: none;
+    margin: 0;
+    padding: 1em 0.7em;
+    margin: 1em 0.2em ;
+    font-size: 15px;
+    font-variant-caps: unicase;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.subgenre li:hover {
+    border: 2px solid var(--main-primary);
+    border-radius: 5px;
+}
+
+.subgenre li:last-child {
+    flex: 1;
+}
+
+.bbanner .top {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex: 2;
+    padding: 0 1em;
+}
+
+.top .head {
+    width: 100%;
+}
+
+.top .head h2 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1em;
+    font-size: 26px;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+.top .con {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+}
+
+.bbannercon .bannericoncon {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5em 1em;
+    position: fixed;
+    width: 100%;
+}
+
+.bannericoncon .icons {
+    height: 30px;
+    width: 30px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.icons path {
+    color: var(--main-primary);
+}
+
+.icons:hover {
+    transform: rotate(180deg);
+}

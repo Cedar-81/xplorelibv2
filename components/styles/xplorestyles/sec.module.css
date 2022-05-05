@@ -1,0 +1,31 @@
+.cardcon .innercon {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.outercon {
+
+    padding: 0 5%;
+}
+
+.cardcon {
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    margin-bottom: 1em;
+}
+
+.head {
+    display: flex;
+    padding: 2em 5% 0 5%;
+}
+
+
+.head .sectitle {
+    font-size: 45px;
+    font-family: "Dancing Script", cursive;
+}
+
+

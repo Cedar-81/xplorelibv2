@@ -1,0 +1,163 @@
+.xplore {
+    min-height: 100vh;
+    color: var(--font-primary);
+}
+
+.secdiv .summary {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.877);
+
+}
+
+.secdiv .con {
+    width: 20rem;
+    height: 28rem;
+    border: 2px solid var(--main-primary);
+    border-radius: 5px;
+    padding: 1em;
+    cursor: alias;
+}
+
+.summary .con .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actions .icon {
+    width: 25px;
+    height: 25px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.icon:hover {
+    transform: rotate(180deg);
+}
+
+.icon path {
+    color: var(--main-primary);
+}
+
+.actions h2 {
+    width: 15rem;
+}
+
+.con p {
+    height: 18rem;
+    overflow-y: scroll;
+}
+
+.con p::-webkit-scrollbar {
+    width: 6px;
+    padding-left: 0.2em;
+} 
+
+.secdiv .download {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.877);
+}
+
+.download .name {
+    width: 100%;
+    height: 3.5em;
+    font-size: 15px;
+    background-color: transparent;
+    color: var(--font-primary);
+    border: none;
+    border-bottom: 2px solid var(--font-primary);
+    transition: 1s;
+}
+
+
+.download input:focus {
+    border: none;
+    border-bottom: 2px solid var(--main-primary);
+}
+
+.download h2 {
+    font-size: 30px;
+    text-align: center;
+    font-family: "Dancing Script", 'cursive';
+}
+
+.download .radiobtn {
+    width: 15px;
+    height: 15px;
+}
+
+
+.download .radio {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em 0;
+}
+
+.download label {
+    font-size: 18px;
+    
+}
+
+.download .con {
+    height: 18em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.download .submit {
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9em;
+    font-size: 15px;
+    padding: 0;
+    border-radius: 5px;
+    background-color: var(--main-primary);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.download .submit:hover {
+    background-color: transparent;
+    border: 2px solid var(--main-primary);
+}
+
+.download .btncon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.download .cancel {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cancel .icon {
+    width: 20px;
+    height: 20px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.cancel .icon:hover {
+    transform: rotate(180deg);
+}

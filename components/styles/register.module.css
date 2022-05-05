@@ -1,0 +1,55 @@
+.reg {
+    width: 25rem;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--main-primary);
+    border-radius: 5px;
+    color: var(--font-primary);
+    padding: 3em 1em;
+    align-items: center;
+}
+
+.reg h2 {
+    color: var(--font-primary);
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif ;
+}
+
+.reg .btncon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 3em;
+}
+
+.reg .btn {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: var(--main-primary);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.reg .btn:hover {
+    background-color: transparent;
+    border: 2px solid var(--main-primary);
+}
+
+
+.con {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
