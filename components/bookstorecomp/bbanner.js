@@ -43,9 +43,11 @@ function BBanner({showSum, showDown, toggleShowBanner}) {
         toggle()
 
         if(selectedval == 'Fiction') {
-            setgenreval(genre.Fiction.map((gen, key) => <li id={key}>{gen}</li> )) 
+            let count = 0
+            setgenreval(genre.Fiction.map(gen => {count += 1; return <li key={count}>{gen}</li>} )) 
         } else if (selectedval == 'Non-Fiction') {
-            setgenreval(genre.Non_fiction.map((gen, key) => <li id={key}>{gen}</li> )) 
+            let count = 0
+            setgenreval(genre.Non_fiction.map(gen => {count += 1; return <li key={count}>{gen}</li>} )) 
         }
         // async function getBooks() {
         //   const books = await fetch('/api/book', {method:'GET'})
@@ -62,7 +64,7 @@ function BBanner({showSum, showDown, toggleShowBanner}) {
                 if(count <= 3) {
     
                 return (
-                    <Card bookval={{
+                    <Card key={book.id} bookval={{
                     key: book.id,
                     title: book.title,
                     rating: book.rating,

@@ -65,7 +65,7 @@ function Card({bookval, showSum, showDown}) {
   if(bookval) {
   for(let i=0; i < bookval.rating ; i++) {
                     
-    ratingli.push(<AiIcons.AiFillStar className={classes.icon} />)              
+    ratingli.push(<AiIcons.AiFillStar key={i} className={classes.icon} />)              
   }
 
   }

@@ -41,7 +41,7 @@ function Bookstore() {
             if(count <= val) {
     
             return (
-                <Card bookval={{
+                <Card key={book.id} bookval={{
                 key: book.id,
                 title: book.title,
                 rating: book.rating,

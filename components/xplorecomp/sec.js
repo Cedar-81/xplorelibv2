@@ -24,7 +24,7 @@ function Section({showSum, showDown}) {
             if(count <= 5) {
   
               return (
-                <Card bookval={{
+                <Card key={book.id} bookval={{
                   key: book.id,
                   title: book.title,
                   rating: book.rating,
