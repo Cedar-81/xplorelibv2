@@ -8,7 +8,7 @@ function Home() {
     const [video, setvideo] = useState()
 
     useEffect(() => {
-        setvideo(<source src="/assets/bckvid.mp4" type='video/mp4'  />)
+        setvideo(<source src="/assets/bckvid2.mp4" type='video/mp4'  />)
     }, [])
 
   return (
