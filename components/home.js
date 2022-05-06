@@ -5,6 +5,12 @@ import Link from 'next/link'
 
 function Home() {
 
+    const [video, setvideo] = useState()
+
+    useEffect(() => {
+        setvideo(<source src="/assets/bckvid.mp4" type='video/mp4'  />)
+    }, [])
+
   return (
     <div className={classes.home}>
         <div className={classes.img}></div>
@@ -21,7 +27,7 @@ function Home() {
                 <Link href={'/xplore'}><div className={classes.btn}>Xplore</div></Link> 
             </div>
             <video autoPlay loop muted disablePictureInPicture>
-                <source src="/assets/bckvid2.mp4" type='video/mp4'  />
+                {video}
                 Your browser does not support video tag
             </video>
         </div>
