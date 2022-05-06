@@ -35,12 +35,14 @@
     align-items: center;
     background-color: var(--font-primary);
     mix-blend-mode: darken;
+    overflow: hidden;
 }
 
 .videocon video {
     width: 100%;
     min-height: 100vh;
     max-height: 100vh;
+    overflow: hidden;
     object-fit: cover;
     top: 0;
     position: absolute;

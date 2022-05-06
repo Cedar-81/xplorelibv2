@@ -4,7 +4,6 @@ import classes from '../styles/xplorestyles/card.module.css'
 
 import * as AiIcons from 'react-icons/ai'
 import * as MdIcons from 'react-icons/md'
-import img1 from '../../public/assets/bckimg2.jpg'
 
 
 function Card({bookval, showSum, showDown}) {

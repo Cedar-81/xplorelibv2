@@ -8,7 +8,10 @@ function Home() {
     const [video, setvideo] = useState()
 
     useEffect(() => {
-        setvideo(<source src="/assets/bckvid2.mp4" type='video/mp4'  />)
+        setvideo(<video autoPlay loop muted disablePictureInPicture>
+            <source src="/assets/bckvid2.mp4" type='video/mp4'  />
+            Your browser does not support video tag
+        </video>)
     }, [])
 
   return (
@@ -26,10 +29,7 @@ function Home() {
                 <h3>the next generation library</h3>
                 <Link href={'/xplore'}><div className={classes.btn}>Xplore</div></Link> 
             </div>
-            <video autoPlay loop muted disablePictureInPicture>
-                {video}
-                Your browser does not support video tag
-            </video>
+            {video}   
         </div>
     </div>
   )
