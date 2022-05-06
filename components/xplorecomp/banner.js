@@ -17,7 +17,7 @@ function Banner() {
                         <h1><b>Xplore a Plathera of Knowledge</b></h1>
                     </div>
                     <video autoPlay loop muted>
-                        <source src="/assets/bckvid.mp4" type='video/mp4'  />
+                        <source src="/assets/bckvid3.mp4" type='video/mp4'  />
                         Your browser does not support video tag
                     </video>
                 </div>
